@@ -3,10 +3,9 @@ class Greeting
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.ho
+    time = DateTime.now.new_offset
 
-    if num_1==num_2 && num_2==num_3
-      resp.write "Good Morning"
+    if time <= "Good Morning"
     else
       resp.write "Good Afternoon"
     end
